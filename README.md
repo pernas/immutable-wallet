@@ -1,7 +1,13 @@
 # Immutable-wallet
 
 Wallet library using immutable data structures and typescript.
- 
+
+  * typescript
+  * immutablejs
+  * mocha
+  * chai and chai-immutable
+  * tsd
+
 ## Usage
 
 ```
