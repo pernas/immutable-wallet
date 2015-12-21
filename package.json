@@ -4,10 +4,11 @@
   "description": "immutable blockchain-wallet with typescript",
   "main": "./built/index.js",
   "scripts": {
-    "prepublish": "tsc -p .",
+    "prepublish": "tsd install && tsd link",
     "pretest": "tsc -p .",
     "test": "mocha ./built/test/* --require ./test/chaiPlugin.js  --recursive",
     "test:watch": "npm run test -- --watch",
+    "prestart": "tsc -p .",
     "start": "node ./built/index.js"
   },
   "author": "Jaume Pernas",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "chai-immutable": "^1.5.3",
-    "mocha": "^2.3.4"
+    "mocha": "^2.3.4",
+    "tsd": "^0.6.5"
   }
 }
