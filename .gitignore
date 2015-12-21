@@ -1,0 +1,21 @@
+# OS X
+.DS_Store
+
+# vim
+*.swp
+
+# emacs
+*~
+
+# Node
+node_modules
+npm-debug.log
+npm-shrinkwrap.json
+
+# Generated js files
+build
+dist
+typings
+
+# Generated coverage reports
+coverage

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "module": "commonjs",
+    "target": "es5",
+    "noImplicitAny": false,
+    "outDir": "built",
+    "rootDir": ".",
+    "sourceMap": false,
+    "removeComments": true
+  },
+  "buildOnSave": true,
+  "exclude": [
+      "node_modules",
+      "wwwroot",
+      "built"
+  ]
+}
