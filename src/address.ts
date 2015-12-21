@@ -12,15 +12,14 @@ interface AddressInterface {
 }
 
 // immutable record
-type RecordAlias = {new(a:AddressInterface):AddressInterface;};
-const AddressRecord: RecordAlias = <any>Record({
+const AddressRecord: {new(a:AddressInterface):AddressInterface;} = <any>Record({
   addr:                   null,
   priv:                   null,
   tag:                    null,
   label:                  null,
   created_time:           null,
   created_device_name:    null,
-  created_device_version: null,
+  created_device_version: null
 })
 
 // factory
