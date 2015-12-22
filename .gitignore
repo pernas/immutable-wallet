@@ -19,3 +19,6 @@ typings
 
 # Generated coverage reports
 coverage
+
+# sensitive data
+src/payload.ts

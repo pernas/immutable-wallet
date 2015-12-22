@@ -28,20 +28,20 @@ describe('Address class', () => {
     it('different objects but the same address', () => {
       expect(addr1).to.equal(addr2);
     });
-    it('should not be equal after a change', () => {
-      expect(addr1.setLabel("blank label")).not.to.equal(addr2);
-    });
+    // it('should not be equal after a change', () => {
+    //   expect(addr1.setLabel("blank label")).not.to.equal(addr2);
+    // });
 
   });
-  describe('Immutability', () => {
-
-    it('setLabel should not change the original address', () => {
-      const newAddr = addr1.setLabel('hello new label');
-      expect(newAddr.label).to.equal('hello new label');
-      expect(addr1).to.equal(addr2);
-    });
-
-  });
+  // describe('Immutability', () => {
+  //
+  //   it('setLabel should not change the original address', () => {
+  //     const newAddr = addr1.setLabel('hello new label');
+  //     expect(newAddr.label).to.equal('hello new label');
+  //     expect(addr1).to.equal(addr2);
+  //   });
+  //
+  // });
   describe('JSON serialization', () => {
 
     it('fromJSON o toJSON = id', () => {
